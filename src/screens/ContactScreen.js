@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Stylesheet } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
 const ContactScreen = () => {
   return (
@@ -9,6 +9,6 @@ const ContactScreen = () => {
   )
 }
 
-const styles = Stylesheet.create({})
+const styles = StyleSheet.create({})
 
 export default ContactScreen;

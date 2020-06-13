@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Stylesheet } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
 const SigninScreen = () => {
   return (
@@ -9,6 +9,6 @@ const SigninScreen = () => {
   )
 }
 
-const styles = Stylesheet.create({})
+const styles = StyleSheet.create({})
 
 export default SigninScreen;

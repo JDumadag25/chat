@@ -13,20 +13,16 @@ import ContactScreen from './src/screens/ContactScreen'
 
 const switchNavigatior = createSwitchNavigator({
   loginFlow: createStackNavigator({
-    Signin: SigninScreen,
-    Signup: SignupScreen
+    Signup: SignupScreen,
+    Signin: SigninScreen
   }),
   mainFlow: createBottomTabNavigator({
-    Chatlist: ChatlistScreen,
-    Chat: ChatScreen,
+    chatlistFlow: createStackNavigator({
+      Chatlist: ChatlistScreen,
+      Chat: ChatScreen
+    }),
     Contact: ContactScreen
   })
 })
 
-const App = createAppContainer(switchNavigatior)
-
-export default () => {
-  return(
-    <App ref={(navigator) => { setNavigator(navigator) }} />
-  )
-}
+export default createAppContainer(switchNavigatior)
