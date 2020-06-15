@@ -1,10 +1,19 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import AuthForm from '../components/AuthForm'
+import NavLink from '../components/NavLink'
 
 const SignupScreen = () => {
   return (
     <View>
-      <Text>SignupScreen</Text>
+      <AuthForm
+        headerText='Sign Up for Tracker'
+        submitButtonText='Sign Up'
+      />
+      <NavLink
+          routeName='Signin'
+          text='Already have an account Sign In instead'
+        />
     </View>
   )
 }
