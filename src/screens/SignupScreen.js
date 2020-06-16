@@ -7,7 +7,7 @@ const SignupScreen = () => {
   return (
     <View>
       <AuthForm
-        headerText='Sign Up for Tracker'
+        headerText='Sign Up'
         submitButtonText='Sign Up'
       />
       <NavLink
