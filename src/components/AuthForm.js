@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { NavigationEvents } from 'react-navigation'
 import { View, StyleSheet } from 'react-native'
 import { Text, Button, Input } from 'react-native-elements'
+
 
 const AuthForm = ({ navigation, headerText, submitButtonText }) => {
   return (

@@ -9,6 +9,7 @@ import SignupScreen from './src/screens/SignupScreen'
 import ChatlistScreen from './src/screens/ChatlistScreen'
 import ChatScreen from './src/screens/ChatScreen'
 import ContactScreen from './src/screens/ContactScreen'
+import NewMessageScreen from './src/screens/NewMessageScreen'
 
 
 const switchNavigatior = createSwitchNavigator({
@@ -21,6 +22,7 @@ const switchNavigatior = createSwitchNavigator({
       Chatlist: ChatlistScreen,
       Chat: ChatScreen
     }),
+    NewMessage: NewMessageScreen,
     Contact: ContactScreen
   })
 })

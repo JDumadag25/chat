@@ -3,12 +3,13 @@ import { View, Text, StyleSheet } from 'react-native'
 import AuthForm from '../components/AuthForm'
 import NavLink from '../components/NavLink'
 
-const SignupScreen = () => {
+const SignupScreen = ({ navigation }) => {
   return (
     <View>
       <AuthForm
         headerText='Sign Up'
         submitButtonText='Sign Up'
+        navigation={navigation}
       />
       <NavLink
           routeName='Signin'
